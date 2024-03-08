@@ -57,5 +57,14 @@ public class CustomListTest {
 
     }
 
+    public void countCity(){
+        City city = new City("City1","Prov1");
+        City city2 = new City("City2","Prov2");
+        City city3 = new City("City3","Prov3");
+        list.addCity(city);
+        list.addCity(city2);
+        list.addCity(city3);
+        assertEquals(3, list.getCount());}
+
 
 }
