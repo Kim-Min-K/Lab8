@@ -43,5 +43,18 @@ public class CustomListTest {
         assertTrue("List contains Quebec", list.hasCity(city));
     }
 
+    /**
+     * This test adds city to array then deletes and checks if city object is present
+     */
+    public void deleteCity(){
+        City city = new City("Edmonton","AB");
+        list.addCity(city);
+        City city2 = new City("Vancouver","BC");
+        list.addCity(city2);
+        list.deleteCity(city2);
+        assertTrue("List contains Vancouver BC",list.hasCity(city2));
+
+    }
+
 
 }
